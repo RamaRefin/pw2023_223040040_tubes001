@@ -53,75 +53,74 @@ if (isset($_POST["cari"])) {
 
     <form action="" method="post">
 
-        <input type="text" name="keyword" size="30" autofocus placeholder="masukan keyword..." autocomplete="off">
-        <button type="submit" name="cari">Cari!</button>
+        <input type="text" name="keyword" size="30" autofocus placeholder="masukan keyword..." autocomplete="off" id="keyword">
+        <button type="submit" name="cari" id="tombol-cari">Cari!</button>
 
     </form>
     <br>
+    <div class="contianer">
 
-    <!-- navigasi -->
+        <!-- navigasi -->
 
-
-    <?php if ($halamanAktif > 1) : ?>
-        <a href="?halaman=<?= $halamanAktif - 1; ?>">&laquo;</a>
-    <?php endif; ?>
-
-    <?php for ($i = 1; $i <= $jumlahHalaman; $i++) : ?>
-        <?php if ($i == $halamanAktif) : ?>
-            <a href="?halaman=<?= $i; ?>" style="font-weight: bold; color: red;"><?= $i; ?></a>
-        <?php else : ?>
-            <a href="?halaman=<?= $i; ?>"><?= $i; ?></a>
+        <?php if ($halamanAktif > 1) : ?>
+            <a href="?halaman=<?= $halamanAktif - 1; ?>">&laquo;</a>
         <?php endif; ?>
-    <?php endfor; ?>
 
-    <?php if ($halamanAktif < $jumlahHalaman) : ?>
-        <a href="?halaman=<?= $halamanAktif + 1; ?>">&raquo;</a>
-    <?php endif; ?>
+        <?php for ($i = 1; $i <= $jumlahHalaman; $i++) : ?>
+            <?php if ($i == $halamanAktif) : ?>
+                <a href="?halaman=<?= $i; ?>" style="font-weight: bold; color: red;"><?= $i; ?></a>
+            <?php else : ?>
+                <a href="?halaman=<?= $i; ?>"><?= $i; ?></a>
+            <?php endif; ?>
+        <?php endfor; ?>
 
-
-    <br>
-
-    <table border=" 1" cellpadding="10" cellspacing="0">
-
-        <tr>
-
-            <th>No. </th>
-            <th>Aksi</th>
-            <th>Gambar</th>
-            <th>Judul </th>
-            <th>Deskripsi</th>
-            <th>Harga</th>
+        <?php if ($halamanAktif < $jumlahHalaman) : ?>
+            <a href="?halaman=<?= $halamanAktif + 1; ?>">&raquo;</a>
+        <?php endif; ?>
 
 
+        <br>
 
-        </tr>
+        <table border=" 1" cellpadding="10" cellspacing="0">
 
-        <?php $i = 1; ?>
-        <?php foreach ($item as $row) : ?>
             <tr>
 
-                <td><?= $i; ?></td>
-                <td>
-                    <a href="ubah.php?id=<?= $row["id"]; ?>">ubah</a> |
-                    <a href="hapus.php?id=<?= $row["id"]; ?>" onclick="
-                    return confirm('Yakin nich??');">hapus</a>
-                </td>
-                <td><img src="img/<?= $row["gambar"]; ?> " width="50"></td>
-                <td><?= $row["judul"]; ?></td>
-                <td><?= $row["deskripsi"]; ?></td>
-                <td><?= $row["harga"]; ?></td>
+                <th>No. </th>
+                <th>Aksi</th>
+                <th>Gambar</th>
+                <th>Judul </th>
+                <th>Deskripsi</th>
+                <th>Harga</th>
+
+
 
             </tr>
-            <?php $i++; ?>
-        <?php endforeach; ?>
+
+            <?php $i = 1; ?>
+            <?php foreach ($item as $row) : ?>
+                <tr>
+
+                    <td><?= $i; ?></td>
+                    <td>
+                        <a href="ubah.php?id=<?= $row["id"]; ?>">ubah</a> |
+                        <a href="hapus.php?id=<?= $row["id"]; ?>" onclick="
+                    return confirm('Yakin nich??');">hapus</a>
+                    </td>
+                    <td><img src="img/<?= $row["gambar"]; ?> " width="50"></td>
+                    <td><?= $row["judul"]; ?></td>
+                    <td><?= $row["deskripsi"]; ?></td>
+                    <td><?= $row["harga"]; ?></td>
+
+                </tr>
+                <?php $i++; ?>
+            <?php endforeach; ?>
 
 
 
-    </table>
+        </table>
+    </div>
 
-    <script>
-        src = "js/script.js"
-    </script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
