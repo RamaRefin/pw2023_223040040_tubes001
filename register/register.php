@@ -49,9 +49,9 @@ if (isset($_POST["signup"])) {
             <i class='bx bx-search' id="search-icon"></i>
         </div>
         <!-- search box -->
-        <div class="search-box">
+        <!-- <div class="search-box">
             <input type="search" name="" id="" placeholder="Search here...">
-        </div>
+        </div> -->
     </header>
     <!-- halaman signup -->
 
@@ -61,7 +61,7 @@ if (isset($_POST["signup"])) {
                 <form action="" method="post">
                     <h2>USER REGISTER</h2>
                     <div class="inputbox">
-                        <input type="text" name="username1" id="username1" required>
+                        <input type="text" name="username1" id="username1" required autocomplete="off">
                         <label for="username1">Username <label>
                     </div>
                     <div class="inputbox">

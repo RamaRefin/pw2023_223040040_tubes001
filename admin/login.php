@@ -84,19 +84,13 @@ if (isset($_POST["login"])) {
 </head>
 
 <body>
-
-
-
-
-    <?php if (isset($error)) : ?>
-        <p style="color: red; font-style: italic;">Username / Password salah! </p>
-    <?php endif; ?>
-
-
     <div class="container">
         <div class="login">
             <form action="" method="post">
                 <h1> Halaman Login </h1>
+                <?php if (isset($error)) : ?>
+                    <p style="color: red; font-style: italic;">Username / Password salah! </p>
+                <?php endif; ?>
 
                 <ul>
                     <li>

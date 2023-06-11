@@ -155,11 +155,10 @@ h2 {
   color: black;
   font-size: 1em;
   pointer-events: none;
-  transition: 0.5s;
 }
 
-input:focus ~ label,
-input:focus ~ :valid {
+input:focus ~ :valid,
+input:focus ~ label {
   top: -5px;
 }
 

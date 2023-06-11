@@ -15,7 +15,7 @@
         <nav>
             <ul>
                 <li><a href="#" class="logo">
-                        <img src="img/ibnu.jpg" alt="admin.png">
+                        <img src="img/usercp.png" alt="admin.png">
                         <span class="nav-item"> Refin </span>
                     </a></li>
                 <li><a href="#">

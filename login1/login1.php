@@ -77,9 +77,9 @@ if (isset($_POST["login"])) {
             <i class='bx bx-cart'></i>
         </div>
         <!-- search box -->
-        <div class="search-box">
+        <!-- <div class="search-box">
             <input type="search" name="" id="" placeholder="Search here...">
-        </div>
+        </div> -->
     </header>
     <!-- LOGIN -->
 
@@ -94,7 +94,7 @@ if (isset($_POST["login"])) {
                     <h2> USER LOGIN </h2>
                     <div class="inputbox">
                         <label for="username">Username </label>
-                        <input type="text" name="username" id="username">
+                        <input type="text" name="username" id="username" autocomplete="off">
                     </div>
                     <div class="inputbox">
                         <label for="password">Password </label>
