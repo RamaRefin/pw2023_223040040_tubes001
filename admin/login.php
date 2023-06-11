@@ -23,7 +23,7 @@ if (isset($_COOKIE['login']) && isset($_COOKIE['key'])) {
 
 
 if (isset($_SESSION["login"])) {
-    header("Location: index.php");
+    header("Location: dashboard.php");
     exit;
 }
 
@@ -61,7 +61,7 @@ if (isset($_POST["login"])) {
                 );
             }
 
-            header("Location: index.php");
+            header("Location: dashboard.php");
             exit;
         }
     }
@@ -80,41 +80,52 @@ if (isset($_POST["login"])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halaman login</title>
+    <link rel="stylesheet" href="login.css">
 </head>
 
 <body>
 
 
-    <h1> Halaman Login </h1>
+
 
     <?php if (isset($error)) : ?>
         <p style="color: red; font-style: italic;">Username / Password salah! </p>
     <?php endif; ?>
 
 
+    <div class="container">
+        <div class="login">
+            <form action="" method="post">
+                <h1> Halaman Login </h1>
 
-    <form action="" method="post">
+                <ul>
+                    <li>
+                        <label for="username">Username </label>
+                        <input type="text" name="username" id="username">
+                    </li>
+                    <li>
+                        <label for="password">Password </label>
+                        <input type="password" name="password" id="password">
+                    </li>
+                    <li>
+                        <input type="checkbox" name="remember" id="remember">
+                        <label for="remember">Remember me </label>
+                    </li>
+                    <li>
+                        <button type="submit" name="login">login</button>
+                    </li>
+                    <div class="register">
+                        <p>Don't Have a Account <a href="registrasi.php">Register</a></p>
+                    </div>
+                </ul>
 
-        <ul>
-            <li>
-                <label for="username">Username </label>
-                <input type="text" name="username" id="username">
-            </li>
-            <li>
-                <label for="password">Password </label>
-                <input type="password" name="password" id="password">
-            </li>
-            <li>
-                <input type="checkbox" name="remember" id="remember">
-                <label for="remember">Remember me </label>
-            </li>
-            <li>
-                <button type="submit" name="login">login</button>
-            </li>
-        </ul>
 
-
-    </form>
+            </form>
+        </div>
+        <div class="right">
+            <img src="img/8710439.png" alt="user">
+        </div>
+    </div>
 
 
 </body>

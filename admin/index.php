@@ -44,8 +44,8 @@ if (isset($_POST["cari"])) {
 </head>
 
 <body>
+    <a href="dashboard.php">back</a>
 
-    <a href="logout.php">Logout</a>
 
     <h1> Daftar Item </h1>
     <a href="tambah.php">Tambah Item Catalog</a>

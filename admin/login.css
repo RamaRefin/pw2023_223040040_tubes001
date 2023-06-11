@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  background: url(img/bglog.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  max-width: 850px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+.login {
+  width: 400px;
+}
+form {
+  width: 250px;
+  margin: 60px auto;
+}
+h1 {
+  margin: 20px;
+  text-align: center;
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-size: 25px;
+  color: black;
+}
+
+form li {
+  text-align: center;
+  margin: 10px;
+  list-style: none;
+}
+
+.right img {
+  width: 450px;
+  height: 100%;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+form label {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 5px;
+}
+input {
+  width: 100%;
+  margin: 2px;
+  border: none;
+  outline: none;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+button {
+  border: none;
+  outline: none;
+  padding: 8px;
+  width: 252px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 5px;
+  background: blue;
+}
+
+button:hover {
+  background: lightblue;
+}
+
+.register {
+  font-size: 0.9em;
+  color: black;
+  text-align: center;
+  margin: 25px 0 10px;
+}
+
+/* RESPONSIVE WEB */
+
+@media (max-width: 880px) {
+  .container {
+    width: 100%;
+    max-width: 750px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  form {
+    width: 300px;
+    margin: 20px auto;
+  }
+  .login {
+    width: 400px;
+    padding: 20px;
+  }
+  button {
+    width: 100%;
+  }
+  .right img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 991px) {
+  .container {
+    width: 100%;
+    max-width: 750px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  form {
+    width: 300px;
+    margin: 20px auto;
+  }
+  .login {
+    width: 400px;
+    padding: 20px;
+  }
+  button {
+    width: 100%;
+  }
+  .right img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    max-width: 750px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  form {
+    width: 300px;
+    margin: 20px auto;
+  }
+  .login {
+    width: 400px;
+    padding: 20px;
+  }
+  button {
+    width: 100%;
+  }
+  .right img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 488px) {
+  .container {
+    width: 100%;
+    max-width: 750px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  form {
+    width: 300px;
+    margin: 20px auto;
+  }
+  .login {
+    width: 400px;
+    padding: 20px;
+  }
+  button {
+    width: 100%;
+  }
+  .right img {
+    display: none;
+  }
+}
+@media (max-width: 360px) {
+  .container {
+    width: 100%;
+    max-width: 750px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  form {
+    width: 300px;
+    margin: 20px auto;
+  }
+  .login {
+    width: 400px;
+    padding: 20px;
+  }
+  button {
+    width: 100%;
+  }
+  .right img {
+    display: none;
+  }
+}
