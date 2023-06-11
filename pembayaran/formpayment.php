@@ -39,7 +39,6 @@ if (!isset($_SESSION["login"])) {
         </ul>
         <!-- icon -->
         <div class="header-icon">
-            <i class='bx bx-search' id="search-icon"></i>
             <i class='bx bx-cart'></i>
             <a href="../logoutus/logoutus.php"><i class='bx bx-log-out'></a></i>
         </div>
