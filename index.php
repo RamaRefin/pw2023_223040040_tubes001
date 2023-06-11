@@ -19,6 +19,8 @@ $item = query("SELECT * FROM catalog");
 <body>
 
     <h1> Daftar Item </h1>
+    <a href="tambah.php">Tambah Item Catalog</a>
+    <br><br>
 
     <table border="1" cellpadding="10" cellspacing="0">
 
@@ -41,8 +43,9 @@ $item = query("SELECT * FROM catalog");
 
                 <td><?= $i; ?></td>
                 <td>
-                    <a href="">ubah</a> |
-                    <a href="">hapus</a>
+                    <a href="ubah.php?id=<?= $row["id"]; ?>">ubah</a> |
+                    <a href="hapus.php?id=<?= $row["id"]; ?>" onclick="
+                    return confirm('Yakin nich??');">hapus</a>
                 </td>
                 <td><img src="img/<?= $row["gambar"]; ?> " width="50"></td>
                 <td><?= $row["judul"]; ?></td>
