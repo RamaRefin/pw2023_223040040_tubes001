@@ -47,8 +47,9 @@ if (isset($_POST["submit"])) {
 <body>
 
     <h1> Ubah Item </h1>
-    <input type="hidden" name="id" value="<?= $item["id"]; ?>">
-    <form action="" method="post">
+    <form action="" method="post" enctype="multipart/form-data">
+        <input type="hidden" name="id" value="<?= $item["id"]; ?>">
+        <input type="hidden" name="gambarLama" value="<?= $item["gambar"]; ?>">
         <li>
             <label for="judul">Judul</label>
             <input type="text" name="judul" id="judul" required value="<?= $item["judul"]; ?>">
@@ -63,8 +64,8 @@ if (isset($_POST["submit"])) {
         </li>
         <li>
             <label for="gambar">Gambar</label>
-            <input type="text" name="gambar" id="gambar" required value="<?= $item["gambar"]; ?>">
-        </li>
+            <img src="img/<?= $item['gambar']; ?>" width="50"> <br>
+            <input type="file" name="gambar" id="gambar">
         <li>
             <button type="submit" name="submit">ubah Data!</button>
         </li>

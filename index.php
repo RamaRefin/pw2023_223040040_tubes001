@@ -1,6 +1,12 @@
 <?php
 require 'functions.php';
 $item = query("SELECT * FROM catalog");
+
+//  tombol cari di klik
+if (isset($_POST["cari"])) {
+    $item = cari($_POST["keyword"]);
+}
+
 ?>
 
 
@@ -21,6 +27,14 @@ $item = query("SELECT * FROM catalog");
     <h1> Daftar Item </h1>
     <a href="tambah.php">Tambah Item Catalog</a>
     <br><br>
+
+    <form action="" method="post">
+
+        <input type="text" name="keyword" size="30" autofocus placeholder="masukan keyword..." autocomplete="off">
+        <button type="submit" name="cari">Cari!</button>
+
+    </form>
+    <br>
 
     <table border="1" cellpadding="10" cellspacing="0">
 
