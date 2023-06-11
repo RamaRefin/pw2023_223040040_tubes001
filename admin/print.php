@@ -42,4 +42,4 @@ $html .= '</table>
 
 
 $mpdf->WriteHTML($html);
-$mpdf->Output();
+$mpdf->Output('daftar-item.pdf', \Mpdf\Output\Destination::INLINE);
