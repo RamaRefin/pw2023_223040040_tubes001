@@ -9,7 +9,19 @@ if (!isset($_SESSION["login"])) {
 
 
 require 'functions.php';
-$item = query("SELECT * FROM catalog");
+
+// pagination
+// konfirgurasi
+$jumlahDataPerHalaman = 3;
+$jumlahData = count(query("SELECT * FROM catalog"));
+$jumlahHalaman = ceil($jumlahData / $jumlahDataPerHalaman);
+$halamanAktif = (isset($_GET["halaman"])) ? $_GET["halaman"] : 1;
+//  jika  = 2, awalData = 4
+$awalData = ($jumlahDataPerHalaman * $halamanAktif) - $jumlahDataPerHalaman;
+
+
+
+$item = query("SELECT * FROM catalog LIMIT $awalData, $jumlahDataPerHalaman");
 
 //  tombol cari di klik
 if (isset($_POST["cari"])) {
@@ -47,7 +59,29 @@ if (isset($_POST["cari"])) {
     </form>
     <br>
 
-    <table border="1" cellpadding="10" cellspacing="0">
+    <!-- navigasi -->
+
+
+    <?php if ($halamanAktif > 1) : ?>
+        <a href="?halaman=<?= $halamanAktif - 1; ?>">&laquo;</a>
+    <?php endif; ?>
+
+    <?php for ($i = 1; $i <= $jumlahHalaman; $i++) : ?>
+        <?php if ($i == $halamanAktif) : ?>
+            <a href="?halaman=<?= $i; ?>" style="font-weight: bold; color: red;"><?= $i; ?></a>
+        <?php else : ?>
+            <a href="?halaman=<?= $i; ?>"><?= $i; ?></a>
+        <?php endif; ?>
+    <?php endfor; ?>
+
+    <?php if ($halamanAktif < $jumlahHalaman) : ?>
+        <a href="?halaman=<?= $halamanAktif + 1; ?>">&raquo;</a>
+    <?php endif; ?>
+
+
+    <br>
+
+    <table border=" 1" cellpadding="10" cellspacing="0">
 
         <tr>
 
@@ -85,7 +119,9 @@ if (isset($_POST["cari"])) {
 
     </table>
 
-
+    <script>
+        src = "js/script.js"
+    </script>
 </body>
 
 </html>
