@@ -52,7 +52,7 @@ if (isset($_POST["submit"])) {
         <nav>
             <ul>
                 <li><a href="#" class="logo">
-                        <img src="img/ibnu.jpg" alt="admin.png">
+                        <img src="img/usercp.png" alt="admin.png">
                         <span class="nav-item"> Admin </span>
                     </a></li>
                 <li><a href="dashboard.php">
