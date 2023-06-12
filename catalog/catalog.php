@@ -28,7 +28,7 @@ $catalog = $conn->query($query);
         <i class='bx bx-menu' id="menu-icon"></i>
         <!-- links -->
         <ul class="navbar">
-            <li><a href="../item2/item2.php">Home</a></li>
+            <li><a href="../item2/index.php">Home</a></li>
             <li><a href="#about">About us</a></li>
             <li><a href="#product">Product</a></li>
             <li><a href="#customer">customer</a></li>

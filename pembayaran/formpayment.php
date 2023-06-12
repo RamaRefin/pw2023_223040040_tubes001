@@ -15,7 +15,7 @@ if (!isset($_SESSION["login"])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form payment</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="formpayment.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -32,7 +32,7 @@ if (!isset($_SESSION["login"])) {
         <i class='bx bx-menu' id="menu-icon"></i>
         <!-- links -->
         <ul class="navbar">
-            <li><a href="../item2/item2.php">Home</a></li>
+            <li><a href="../item2/index.php">Home</a></li>
             <li><a href="#about">About us</a></li>
             <li><a href="#product">Product</a></li>
             <li><a href="#customer">customer</a></li>

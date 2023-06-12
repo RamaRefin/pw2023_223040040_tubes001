@@ -38,7 +38,7 @@ if (isset($_POST["signup"])) {
         <i class='bx bx-menu' id="menu-icon"></i>
         <!-- links -->
         <ul class="navbar">
-            <li><a href="../item2/item2.php">Home</a></li>
+            <li><a href="../item2/index.php">Home</a></li>
             <li><a href="#about">About us</a></li>
             <li><a href="../catalog/catalog.php">Product</a></li>
             <li><a href="#customer">customer</a></li>

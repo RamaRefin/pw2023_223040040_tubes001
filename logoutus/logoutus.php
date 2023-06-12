@@ -4,5 +4,5 @@ $_SESSION = [];
 session_unset();
 session_destroy();
 
-header("location: ../item2/item2.php");
+header("location: ../item2/index.php");
 exit;
