@@ -26,7 +26,7 @@
                         <i class="fas fa-solid fa-user"></i>
                         <span class="nav-item">Profile</span>
                     </a></li>
-                <li><a href="index.php">
+                <li><a href="listitem.php">
                         <i class="fas fa-solid fa-boxes-stacked"></i>
                         <span class="nav-item">Item Detail</span>
                     </a></li>
