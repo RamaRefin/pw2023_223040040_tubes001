@@ -95,7 +95,7 @@ if (isset($_POST["login"])) {
                 <ul>
                     <li>
                         <label for="username">Username </label>
-                        <input type="text" name="username" id="username">
+                        <input type="text" name="username" id="username" autocomplete="off">
                     </li>
                     <li>
                         <label for="password">Password </label>
@@ -108,9 +108,9 @@ if (isset($_POST["login"])) {
                     <li>
                         <button type="submit" name="login">login</button>
                     </li>
-                    <div class="register">
+                    <!-- <div class="register">
                         <p>Don't Have a Account <a href="registrasi.php">Register</a></p>
-                    </div>
+                    </div> -->
                 </ul>
 
 

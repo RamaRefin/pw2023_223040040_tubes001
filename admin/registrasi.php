@@ -46,7 +46,7 @@ if (isset($_POST["register"])) {
                 <ul>
                     <li>
                         <label for="username">username </label>
-                        <input type="text" name="username" id="username">
+                        <input type="text" name="username" id="username" autocomplete="off">
                     </li>
                     <li>
                         <label for="password">password </label>
@@ -57,11 +57,11 @@ if (isset($_POST["register"])) {
                         <input type="password" name="password2" id="password2">
                     </li>
                     <li>
-                        <button type="submit" name="register">Register</button>
+                        <!-- <button type="submit" name="register">Register</button> -->
                     </li>
-                    <div class="register">
+                    <!-- <div class="register">
                         <p>Have a Account? <a href="login.php">Login</a></p>
-                    </div>
+                    </div> -->
                 </ul>
             </form>
         </div>
