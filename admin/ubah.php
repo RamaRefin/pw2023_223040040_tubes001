@@ -25,14 +25,14 @@ if (isset($_POST["submit"])) {
         echo "
             <script>
                 alert('data berhasil di ubah!');
-                document.location.href = 'index.php';
+                document.location.href = 'listitem.php';
         </script>
         ";
     } else {
         echo "
             <script>
                  alert('data gagal di ubah!');
-                 document.location.href = 'index.php';
+                 document.location.href = 'listitem.php';
              </script>
 ";
     }

@@ -19,14 +19,14 @@ if (isset($_POST["submit"])) {
         echo "
             <script>
                 alert('data berhasil di tambahkan!');
-                document.location.href = 'index.php';
+                document.location.href = 'listitem.php';
         </script>
         ";
     } else {
         echo "
             <script>
                  alert('data gagal di tambahkan!');
-                 document.location.href = 'index.php';
+                 document.location.href = 'listitem.php';
              </script>
 ";
     }
@@ -91,15 +91,15 @@ if (isset($_POST["submit"])) {
                 <h1> Tambah Item </h1>
                 <li>
                     <label for="judul">Judul</label>
-                    <input type="text" name="judul" id="judul" required>
+                    <input type="text" name="judul" id="judul" required autocomplete="off">
                 </li>
                 <li>
                     <label for="deskripsi">Deskripsi</label>
-                    <input type="text" name="deskripsi" id="deskripsi" required>
+                    <input type="text" name="deskripsi" id="deskripsi" required autocomplete="off">
                 </li>
                 <li>
                     <label for="harga">Harga</label>
-                    <input type="text" name="harga" id="harga" required>
+                    <input type="text" name="harga" id="harga" required autocomplete="off">
                 </li>
                 <li>
                     <label for="gambar">Gambar</label>

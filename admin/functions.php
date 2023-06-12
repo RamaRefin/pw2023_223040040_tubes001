@@ -79,7 +79,7 @@ function upload()
     }
 
 
-    // generate gambar baru
+    // // generate gambar baru
     $namaFileBaru = uniqid();
     $namaFileBaru .= '.';
     $namaFileBaru .= $formatGambar;

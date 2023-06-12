@@ -43,7 +43,7 @@ $catalog = $conn->query($query);
         <!-- icon -->
         <div class="header-icon">
             <i class='bx bx-cart'></i>
-            <a href="login1.php"><i class='bx bx-log-in'></a></i>
+            <a href="logoutus.php"><i class='bx bx-log-out'></a></i>
         </div>
     </header>
     <!-- HOME -->

@@ -15,14 +15,14 @@ if (hapus($id) > 0) {
     echo "
             <script>
                  alert('data berhasil di dihapus!');
-                 document.location.href = 'index.php'
+                 document.location.href = 'listitem.php'
              </script>
         ";
 } else {
     echo "
             <script>
                  alert('data gagal di dihapus!');
-                 document.location.href = 'index.php'
+                 document.location.href = 'listitem.php'
              </script>
         ";
 }
