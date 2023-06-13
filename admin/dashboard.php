@@ -16,7 +16,7 @@
             <ul>
                 <li><a href="#" class="logo">
                         <img src="img/usercp.png" alt="admin.png">
-                        <span class="nav-item"> Refin </span>
+                        <span class="nav-item"> Admin </span>
                     </a></li>
                 <li><a href="#">
                         <i class="fas fa-solid fa-house"></i>
@@ -64,16 +64,6 @@
                     <i class="fa-solid fa-cart-shopping"></i>
                     <h3> Buyer </h3>
                     <p> 378 </p>
-                </div>
-                <div class="card">
-                    <i class="fa-solid fa-comment"></i>
-                    <h3> Comment </h3>
-                    <p> 1092 </p>
-                </div>
-                <div class="card">
-                    <i class="fa-solid fa-heart"></i>
-                    <h3> Likes </h3>
-                    <p> 4587 </p>
                 </div>
             </div>
         </section>
