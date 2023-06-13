@@ -11,7 +11,7 @@ keyword.addEventListener("keyup", function () {
   // kesiapan ajax
   $xhr.onreadystatechange = function () {
     if ($xhr.readyState == 4 && $xhr.status == 200) {
-      container.innerHTML = xhr.responeText;
+      container.innerHTML = $xhr.responseText;
     }
   };
 
